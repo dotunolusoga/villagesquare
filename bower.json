@@ -1,0 +1,21 @@
+{
+  "name": "villagesquare",
+  "version": "1.0.0",
+  "homepage": "https://github.com/dotunolusoga/villagesquare",
+  "authors": [
+    "Dotun Olusoga <adedotun.olusoga@gmail.com>"
+  ],
+  "description": "A local news and connection app",
+  "main": "index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.3"
+  }
+}
