@@ -83,6 +83,12 @@ module.exports = function(grunt) {
     },
 
     watch: {
+      configFiles: {
+       files: ['Gruntfile.js', 'bower.json', 'package.json'],
+       options: {
+         reload: true
+       }
+     },
       other: {
         files: [ 'app/**', '!app/**/*.jade', '!app/**/*.{sass,scss}' ],
         tasks: ['copy']
