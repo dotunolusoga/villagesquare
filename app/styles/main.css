@@ -1,0 +1,17 @@
+@import '../../bower_components/font-awesome/css/font-awesome.min.css';
+@import '../../bower_components/skeleton/css/normalize.css';
+@import '../../bower_components/skeleton/css/skeleton.css';
+
+body {
+  text-align: center;
+}
+
+h1 {
+  background-color: red;
+}
+
+.container {
+  border: 1px solid lightgray;
+  text-align: center;
+  border-radius: 10px;
+}

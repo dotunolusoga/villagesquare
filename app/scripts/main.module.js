@@ -1,1 +1,2 @@
-angular.module('news', ['ngRoute']);
+angular
+  .module('villagesquare', ['ngRoute']);
