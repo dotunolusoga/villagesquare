@@ -1,16 +1,21 @@
+<h3 class="addressform-header"> Enter Your Address</h3>
 <form>
-  <div class="row">
-    <div class="eight columns">
+  <div class="row addressform">
+    <div class="ten columns">
       <label for="streetInput">Street</label>
-      <input placeholder="100 Street Lane" id="streetInput" required="required" class="u-full-width"/>
+      <input type='text' placeholder="100 Street Lane" id="streetInput" required="required" class="u-full-width streetInput"/>
     </div>
-    <div class="eight columns">
+    <div class="ten columns">
       <label for="cityInput">City</label>
-      <input placeholder="New York" id="cityInput" required="required" class="u-full-width"/>
+      <input type='text' placeholder="New York" id="cityInput" required="required" class="u-full-width"/>
     </div>
-    <div class="eight columns">
-      <label for="stateInput">State Zipcode</label>
-      <input placeholder="NY 10001" id="stateInput" required="required" class="u-full-width"/>
+    <div class="five columns">
+      <label for="stateInput">State</label>
+      <input type='text' placeholder="NY" id="stateInput" required="required" class="u-full-width"/>
+    </div>
+    <div class="five columns">
+      <label for="ZipInput">Zip</label>
+      <input type='text' placeholder="10001" id="ZipInput" required="required" class="u-full-width"/>
     </div>
   </div>
   <input class="button-primary" type="submit" value="Submit">
