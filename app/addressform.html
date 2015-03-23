@@ -1,21 +1,21 @@
 <h3 class="addressform-header"> Enter Your Address</h3>
-<form>
+<form name="address.addressForm" ng-submit="address.getAddress()">
   <div class="row addressform">
     <div class="ten columns">
       <label for="streetInput">Street</label>
-      <input type='text' placeholder="100 Street Lane" id="streetInput" required="required" class="u-full-width streetInput"/>
+      <input ng-model="address.newAddress.street" type='text' placeholder="100 Street Lane" id="streetInput" required="required" class="u-full-width streetInput"/>
     </div>
     <div class="ten columns">
       <label for="cityInput">City</label>
-      <input type='text' placeholder="New York" id="cityInput" required="required" class="u-full-width"/>
+      <input ng-model="address.newAddress.city" type='text' placeholder="New York" id="cityInput" required="required" class="u-full-width"/>
     </div>
     <div class="five columns">
       <label for="stateInput">State</label>
-      <input type='text' placeholder="NY" id="stateInput" required="required" class="u-full-width"/>
+      <input ng-model="address.newAddress.state" type='text' placeholder="NY" id="stateInput" required="required" class="u-full-width"/>
     </div>
     <div class="five columns">
       <label for="ZipInput">Zip</label>
-      <input type='text' placeholder="10001" id="ZipInput" required="required" class="u-full-width"/>
+      <input ng-model="address.newAddress.zip" type='text' placeholder="10001" id="ZipInput" required="required" class="u-full-width"/>
     </div>
   </div>
   <input class="button-primary" type="submit" value="Submit">

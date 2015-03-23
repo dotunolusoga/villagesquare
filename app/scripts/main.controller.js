@@ -2,7 +2,7 @@ angular
   .module('villagesquare')
   .controller('HomeController', HomeController)
 
-  function HomeController ($rootScope) {
+  function HomeController () {
 
     var vm = this;
 

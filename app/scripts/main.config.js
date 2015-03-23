@@ -12,6 +12,7 @@ function squareConfig($routeProvider){
   })
     .when('/submit', {
       templateUrl: '/app/addressform.html',
-      controller: ''
+      controller: 'AddressFormCtrl',
+      controllerAs: 'address'
     })
 }
