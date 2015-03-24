@@ -1,5 +1,27 @@
-<div class="infoContainer">
-  <div>
-    
+<div class="row infoContainer">
+  <div class="three columns">
+    <img src={{data.officials[2].photoUrl}}>
+  </div>
+  <div class="seven columns text-container">
+    <ul>
+      <li>
+        {{data.offices[1].name}}
+      </li>
+      <li>
+        {{data.officials[2].name}}
+      </li>
+      <li>
+        {{data.officials[2].party}}
+      </li>
+      <li>
+        {{data.officials[2].phones[0]}}
+      </li>
+      <li>
+        <a ng-href="http://facebook.com/{{data.officials[2].channels[1].id}}" target="_blank">Facebook</a>
+      </li>
+      <li>
+        <a ng-href="{{data.officials[2].urls[0]}}" target="_blank">Website</a>
+      </li>
+    </ul>
   </div>
 </div>

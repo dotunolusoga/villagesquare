@@ -4,21 +4,70 @@
 
 body {
   text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
-h1 {
-  background-color: red;
+.header {
+  height: 100px;
+  background-color: #000;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.logo {
+  color: #FFF;
+  float: left;
+  font-size: 3.8em;
+  margin-left: 3%;
+  margin-top: 1%;
 }
 
 .container {
   border: 1px solid lightgray;
   text-align: center;
   border-radius: 10px;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 300;
+}
+
+.home-container {
+  margin-top: 3%;
+  margin-left: 18%;
+  margin-bottom: 50px;
+}
+
+.enterButton:hover {
+  background-color: #9CF24E;
+  transition: 0.5s linear;
 }
 
 .addressform {
   max-width: 60%;
   margin-left: 25%;
   margin-right:25%;
+  margin-top: 5%;
 
+}
+
+.addressButton:hover {
+  background-color: #9CF24E;
+  transition: 0.5s linear;
+}
+
+img {
+  width: 175px;
+}
+
+.text-container {
+  text-align: left;
+  margin-top: 2%;
+}
+
+////////////////////////////
+//// Media Queries ////////
+///////////////////////////
+
+@media (min-width: 550px)
+
+.home-container {
+  margin-left: 18%;
 }

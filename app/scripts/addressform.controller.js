@@ -3,11 +3,11 @@ angular
   .controller ('AddressFormCtrl', AddressFormCtrl)
 
 
-  function AddressFormCtrl ($http, API_KEY, GGL_URL) {
+  function AddressFormCtrl ($http, API_KEY, PARAM, GGL_URL, $rootScope) {
     var vm = this;
 
     vm.getAddress = function () {
-      var key     = '&key=' + API_KEY,
+      var key     = PARAM + API_KEY,
           re      = / /g,
           re1      = / ,/g,
           re2      = /,/g,
@@ -23,10 +23,15 @@ angular
 
           $http
             .get(jsonUrl)
-            .success(function(response){
-              console.log(response);
+            .success(function(data){
+              $rootScope.data = data;
+              console.log(data);
+              console.log(data.offices[0].name);
+              console.log(data.officials[0].name);
+              console.log(data.officials[0].party);
+              console.log(data.officials[2].channels[1].id);
             }).error(console.log("error!"))
 
-            return jsonUrl;
+            // return jsonUrl;
      }
   }
