@@ -3,8 +3,12 @@ angular
   .controller ('AddressFormCtrl', AddressFormCtrl)
 
 
-  function AddressFormCtrl ($http, API_KEY, PARAM, GGL_URL, $rootScope) {
-    var vm = this;
+  function AddressFormCtrl ($http, API_KEY, PARAM, GGL_URL, $rootScope, $location) {
+    var vm = this,
+    dataKey = {},
+
+    whiteHouse = [];
+
 
     vm.getAddress = function () {
       var key     = PARAM + API_KEY,
@@ -26,12 +30,22 @@ angular
             .success(function(data){
               $rootScope.data = data;
               console.log(data);
-              console.log(data.offices[0].name);
-              console.log(data.officials[0].name);
-              console.log(data.officials[0].party);
-              console.log(data.officials[2].channels[1].id);
-            }).error(console.log("error!"))
+              for (var i in data.offices) {
+                  var checkOffice = data.offices[i].officialIndices;
+                  for (var k in checkOffice) {
+                    dataKey[checkOffice[k]] = [];
+                    dataKey[checkOffice[k]].office = data.offices[i];
+                    dataKey[checkOffice[k]].officials = data.officials[checkOffice[k]];
+                  }
+                  $rootScope.dataKey = dataKey;
+                  console.log(dataKey);
+              }
+              var newData = _.find(dataKey, {'name': "President of the United States"}, 'party');
+              console.info(newData);
+              whiteHouse.push(newData);
+              console.log(whiteHouse);
 
-            // return jsonUrl;
+            })
+      $location.path('/details');
      }
   }

@@ -20,4 +20,12 @@ function squareConfig($routeProvider){
       controller: 'AddressFormCtrl',
       controllerAs: 'address'
     })
+    .when('/profiles', {
+      templateUrl: '/app/profiles.html',
+      controller: 'AddressFormCtrl',
+      controllerAs: 'address'
+    })
+    .otherwise({
+			redirectTo: '/home'
+		})
 }

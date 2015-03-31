@@ -57,11 +57,18 @@ img {
   width: 175px;
 }
 
-.text-container {
+.text-container{
   text-align: left;
   margin-top: 2%;
 }
 
+ul {
+  list-style-type: none;
+}
+
+i {
+  margin-right: 10px;
+}
 ////////////////////////////
 //// Media Queries ////////
 ///////////////////////////
