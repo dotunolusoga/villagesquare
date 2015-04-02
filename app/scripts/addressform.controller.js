@@ -40,12 +40,7 @@ angular
                   $rootScope.dataKey = dataKey;
                   console.log(dataKey);
               }
-              var newData = _.find(dataKey, {'name': "President of the United States"}, 'party');
-              console.info(newData);
-              whiteHouse.push(newData);
-              console.log(whiteHouse);
-
             })
-      $location.path('/details');
+      $location.path('/profiles');
      }
   }

@@ -21,6 +21,11 @@ body {
   margin-top: 1%;
 }
 
+.logo:hover {
+  color: #9CF24E;
+  transition: 0.5s linear;
+}
+
 .container {
   border: 1px solid lightgray;
   text-align: center;
@@ -29,9 +34,41 @@ body {
   font-weight: 300;
 }
 
+.home-logo {
+  color: #9CF24E;
+}
+.banner-header {
+  font-weight: bold;
+  font-size: 2em;
+}
+.banner-caption {
+  max-width: 90%;
+}
+
+.submit-bar {
+  float: right;
+  color: #FFF;
+  margin-right: 2%;
+  margin-top: 2.5%;
+}
+
+.submit-bar a {
+  color: #FFF;
+}
+
+.submit-bar a:hover {
+  color: #9CF24E;
+}
+
+.submit-bar:hover {
+  color: #9CF24E;
+  transition: 0.5s linear;
+}
+
 .home-container {
-  margin-top: 3%;
-  margin-left: 18%;
+  margin-left: 25%;
+  margin-right:25%;
+  margin-top: 5%;
   margin-bottom: 50px;
 }
 
@@ -45,7 +82,6 @@ body {
   margin-left: 25%;
   margin-right:25%;
   margin-top: 5%;
-
 }
 
 .addressButton:hover {
@@ -60,6 +96,12 @@ img {
 .text-container{
   text-align: left;
   margin-top: 2%;
+}
+
+.infoContainer {
+  border-bottom: 1px solid lightgray;
+  margin-top: 17px;
+  margin-bottom: 17px;
 }
 
 ul {
