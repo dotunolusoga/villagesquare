@@ -5,7 +5,8 @@
 <div class="row" ng-repeat="a in dataKey">
   <div class="ten columns infoContainer">
     <div class="three columns">
-      <img src={{a.officials.photoUrl}}>
+      <img ng-show="a.officials.photoUrl" ng-src={{a.officials.photoUrl}}>
+      <img ng-hide="a.officials.photoUrl" ng-src='http://placehold.it/300x300/&text=No+Image'>
     </div>
     <div class="eight columns text-container">
       <ul>
