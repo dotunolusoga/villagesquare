@@ -14,7 +14,7 @@ function squareConfig($routeProvider){
       templateUrl: '/app/addressform.html',
       controller: 'AddressFormCtrl',
       controllerAs: 'address'
-    })
+    })b
     .when('/profiles', {
       templateUrl: '/app/profiles.html',
       controller: 'AddressFormCtrl',
