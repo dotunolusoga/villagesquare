@@ -1,0 +1,122 @@
+@import '../bower_components/font-awesome/css/font-awesome.min.css';
+@import '../bower_components/skeleton/css/normalize.css';
+@import '../bower_components/skeleton/css/skeleton.css';
+
+body {
+  text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.header {
+  height: 100px;
+  background-color: #000;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.logo {
+  color: #FFF;
+  float: left;
+  font-size: 3.8em;
+  margin-left: 3%;
+  margin-top: 1%;
+}
+
+.logo:hover {
+  color: #9CF24E;
+  transition: 0.5s linear;
+}
+
+.container {
+  border: 1px solid lightgray;
+  text-align: center;
+  border-radius: 10px;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 300;
+}
+
+.home-logo {
+  color: #9CF24E;
+}
+.banner-header {
+  font-weight: bold;
+  font-size: 2em;
+}
+.banner-caption {
+  max-width: 90%;
+}
+
+.submit-bar {
+  float: right;
+  color: #FFF;
+  margin-right: 2%;
+  margin-top: 2.5%;
+}
+
+.submit-bar a {
+  color: #FFF;
+}
+
+.submit-bar a:hover {
+  color: #9CF24E;
+}
+
+.submit-bar:hover {
+  color: #9CF24E;
+  transition: 0.5s linear;
+}
+
+.home-container {
+  margin-left: 25%;
+  margin-right:25%;
+  margin-top: 5%;
+  margin-bottom: 50px;
+}
+
+.enterButton:hover {
+  background-color: #9CF24E;
+  transition: 0.5s linear;
+}
+
+.addressform {
+  max-width: 60%;
+  margin-left: 25%;
+  margin-right:25%;
+  margin-top: 5%;
+}
+
+.addressButton:hover {
+  background-color: #9CF24E;
+  transition: 0.5s linear;
+}
+
+img {
+  width: 175px;
+}
+
+.text-container{
+  text-align: left;
+  margin-top: 2%;
+}
+
+.infoContainer {
+  border-bottom: 1px solid lightgray;
+  margin-top: 17px;
+  margin-bottom: 17px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+i {
+  margin-right: 10px;
+}
+////////////////////////////
+//// Media Queries ////////
+///////////////////////////
+
+@media (min-width: 550px)
+
+.home-container {
+  margin-left: 18%;
+}

@@ -1,0 +1,37 @@
+<div>
+  <h3> meet your PUBLIC OFFICIALS </h3>
+</div>
+
+<div class="row" ng-repeat="a in dataKey">
+  <div class="ten columns infoContainer">
+    <div class="three columns">
+      <img ng-show="a.officials.photoUrl" ng-src={{a.officials.photoUrl}}>
+      <img ng-hide="a.officials.photoUrl" ng-src='http://placehold.it/300x300/&text=No+Image'>
+    </div>
+    <div class="eight columns text-container">
+      <ul>
+        <li>
+          <i class="fa fa-street-view"></i>{{a.officials.name}}  |  <span>{{a.office.name | uppercase}}</span>
+        </li>
+        <li>
+          <i class="fa fa-university"></i>{{a.officials.party}}
+        </li>
+        <li>
+          <i class="fa fa-envelope"></i>{{a.officials.emails[0] | lowercase}}
+        </li>
+        <li>
+          <i class="fa fa-phone"></i>{{a.officials.phones[0]}}
+        </li>
+        <li>
+          <a ng-href="http://facebook.com/{{a.officials.channels[1].id}}" target="_blank">Facebook</a>
+        </li>
+        <li>
+          <a ng-href="http://twitter.com/{{a.officials.channels[2].id}}" target="_blank">Twitter</a>
+        </li>
+        <li>
+          <a ng-href="{{a.officials.urls[0]}}" target="_blank">Website</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
