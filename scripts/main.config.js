@@ -3,20 +3,25 @@ angular
 
   .config(squareConfig);
 
-function squareConfig($routeProvider){
+function squareConfig($routeProvider) {
   $routeProvider
+    .when('/', {
+      templateUrl: 'home.html',
+      controller: 'HomeController',
+      controllerAs: 'home'
+    })
     .when('/home', {
-      templateUrl: '/app/home.html',
+      templateUrl: 'home.html',
       controller: 'HomeController',
       controllerAs: 'home'
   })
     .when('/submit', {
-      templateUrl: '/app/addressform.html',
+      templateUrl: 'addressform.html',
       controller: 'AddressFormCtrl',
       controllerAs: 'address'
-    })b
+    })
     .when('/profiles', {
-      templateUrl: '/app/profiles.html',
+      templateUrl: 'profiles.html',
       controller: 'AddressFormCtrl',
       controllerAs: 'address'
     })
